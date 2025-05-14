@@ -51,62 +51,55 @@ public class Khj20221091_Mid2 {
 
         
         
-        if (use == 0 && use==cmp) {
+		if (use==cmp) {
         	System.out.println("비겼습니다");
         	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
         	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);
         	}
-        else if (use == 0 && use-cmp==-1 ) {
+        else if (use-cmp== -1) {
         	System.out.println("유저 승 컴퓨터 패 컴퓨터 별 1 차감");
         	star ++;
         	cmp_star --;
         	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
-        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);
-        	}
-        else if (use == 0 && use-cmp==-2) {
+        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}		
+ 		else if (use-cmp==-2) {
+        	System.out.println("유저 패 컴퓨터 승 유저 별 1 차감");
+        	star --;
+        	cmp_star ++;
+        	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
+        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}			
+        else if (use-cmp==1) {
         	System.out.println("유저 패 컴퓨터 승 유저 별 1 차감");
         	star --;
         	cmp_star ++;
         	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
         	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}
-        else if (use == 1 && use==cmp) {
-        	System.out.println("비겼습니다");
-        	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
-        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}
-        else if (use == 1 && use-cmp== -1) {
+        else if (use-cmp== 2) {
         	System.out.println("유저 승 컴퓨터 패 컴퓨터 별 1 차감");
         	star ++;
         	cmp_star --;
         	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
         	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}
-        else if (use == 1 && use-cmp== 1) {
-        	System.out.println("유저 패 컴퓨터 승 유저 별 1 차감");
-        	star --;
-        	cmp_star ++;
-        	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
-        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}
-        else if (use == 2 && use==cmp) {
-        	System.out.println("비겼습니다");
-        	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
-        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}
-        else if (use == 2 && use-cmp== 2) {
-        	System.out.println("유저 승 컴퓨터 패 컴퓨터 별 1 차감");
-        	star ++;
-        	cmp_star --;
-        	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
-        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}
-        else if (use == 2 && use-cmp==1) {
-        	System.out.println("유저 패 컴퓨터 승 유저 별 1 차감");
-        	star --;
-        	cmp_star ++;
-        	System.out.printf("무엇을 낼까요?(바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", r,si,p,star);
-        	System.out.printf("(컴퓨터:바위(%d) 가위(%d) 보(%d) 별(%d)남았습니다.)\n", cmp_r,cmp_si,cmp_p,cmp_star);}
+
+
         
-         if (star == 0) {
-        	 System.out.println("유저가 별을 모두 소모했습니다 유저 패배");
+         if (r==0&&si==0&&p==0&&cmp_r==0&&cmp_si==0&&cmp_p==0&&star>cmp_star) {
+        	 System.out.println("최종 유저의 별이 많습니다 유저 승");
         	 break;
          }
-         else if (cmp_star == 0) {
+         else if (r==0&&si==0&&p==0&&cmp_r==0&&cmp_si==0&&cmp_p==0&&star<cmp_star) {
+        	 System.out.println("최종 컴퓨터의 별이 많습니다 컴퓨터 승");
+        	 break;
+         }
+         else if(r==0&&si==0&&p==0&&cmp_r==0&&cmp_si==0&&cmp_p==0&&star==cmp_star) {
+        	 System.out.println("최종 별의 갯수가 동일합니다 비겼습니다.");
+        	 break;
+         }
+         else if(star==0) {
+        	 System.out.println("유저가 별을 모두 소모했습니다 컴퓨터 승");
+        	 break;
+         }
+         else if(cmp_star==0) {
         	 System.out.println("컴퓨터가 별을 모두 소모했습니다 유저 승");
         	 break;
          }
@@ -117,13 +110,3 @@ public class Khj20221091_Mid2 {
         
        
         }
-        
-        
-        
-
-
-
-
-
-    }
-}
